@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <title>Why Animal Rescue Rocks</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pet Adoption Rocks</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto d-flex flex-row">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home</a>
                 </li>
@@ -18,14 +18,16 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
+            <button id="dark-mode-toggle" class="btn btn-dark ms-auto" onclick="toggleDarkMode()">Dark Mode</button>
         </nav>
     </header>
+    
 
     <div class="container-fluid banner text-center bg-light p-5">
-        <img src="./resources/images/dog-smiling.jpeg" alt="Why Animal Rescue Rocks" class="img-fluid">
+        <img src="./images/banner-pointer.jpeg" alt="Pet adoption Rocks" class="img-fluid">
         <div class="banner-text">
-            <h1>Why Animal Rescue Rocks</h1>
-            <p>Explore the incredible benefits of animal rescue. From saving lives to fostering compassion, discover the positive impact of our efforts in the world of animal welfare.</p>
+            <h1>Pet Adoption Rocks</h1>
+            <p>Explore the incredible benefits of pet adoption. From saving lives to fostering compassion, discover the positive impact of pet adoption in the world of animal welfare.</p>
         </div>
     </div>
 
@@ -33,32 +35,43 @@
         <div class="row">
             <section id="section1" class="col-md-6 advantage-section">
                 <h2>Saving Lives</h2>
-                <img src="./resources/images/dog-fence.jpeg" alt="Saving Lives" class="img-fluid">
+                <img src="./images/dog-fence.jpeg" alt="Saving Lives" class="img-fluid">
                 <p>Animal rescue saves lives. By providing shelter, medical care, and love to animals in need, we give them a second chance at life and the opportunity to thrive in a caring environment.</p>
             </section>
 
             <section id="section2" class="col-md-6 advantage-section">
                 <h2>Promoting Compassion</h2>
-                <img src="./resources/images/tabby-walking.jpeg" alt="Promoting Compassion" class="img-fluid">
-                <p>Animal rescue promotes compassion and empathy. When people see the positive impact of rescue efforts, they become more aware of the importance of treating animals with kindness and respect.</p>
+                <img src="./images/tabby-walking.jpeg" alt="Promoting Compassion" class="img-fluid">
+                <p>Pet adoption promotes compassion and empathy. When people see the positive impact of rescue efforts, they become more aware of the importance of treating animals with kindness and respect.</p>
             </section>
         </div>
 
         <div class="row">
             <section id="section3" class="col-md-6 advantage-section">
                 <h2>Building Connections</h2>
-                <img src="./resources/images/woman-kissing-the-dog-.jpeg" alt="Building Connections" class="img-fluid">
+                <img src="./images/woman-kissing-the-dog-.jpeg" alt="Building Connections" class="img-fluid">
                 <p>Rescuing animals fosters a strong sense of community. It brings together individuals who share a passion for animal welfare and encourages collaboration for a common cause.</p>
             </section>
 
             <section id="section4" class="col-md-6 advantage-section">
                 <h2>Creating Happy Families</h2>
-                <img src="./resources/images/staffie.jpeg" alt="Creating Happy Families" class="img-fluid">
-                <p>Animal rescue brings joy to families. Adopting a rescued pet not only changes the life of the animal but also enriches the lives of the people who open their hearts and homes to these wonderful creatures.</p>
+                <img src="./images/staffie.jpeg" alt="Creating Happy Families" class="img-fluid">
+                <p>Pet adoption brings joy to families. Adopting a rescued pet not only changes the life of the animal but also enriches the lives of the people who open their hearts and homes to these wonderful creatures.</p>
             </section>
         </div>
     </div>
 
-    <script src="./resources/script.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Pet Adoption Rocks. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
