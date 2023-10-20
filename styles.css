@@ -105,7 +105,6 @@ h1, h2 {
     color: #fff;
 }
 
-
 /* Styles for the hyperlinks in the "About" section */
 .about a {
     color: darkgray;
@@ -117,9 +116,9 @@ h1, h2 {
 }
 
 .about-image {
-    width: 26%; /* Make the image take up 60% of the container's width */
-    max-width: 100%; /* Allow the image to take up the full width on smaller screens */
-    height: auto; /* Maintain the image's aspect ratio */
+    width: 26%; 
+    max-width: 100%;
+    height: auto;
     margin: 1.25rem 0;
     background-color: #f4f4f4;
     padding: 1.25rem;
@@ -129,7 +128,7 @@ h1, h2 {
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
     .about-image {
-        width: 80%; /* Allow the image to take up the full width on smaller screens */
+        width: 100%;
     }
 }
 
