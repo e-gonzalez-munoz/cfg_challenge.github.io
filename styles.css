@@ -111,15 +111,6 @@ h1, h2 {
     padding: 1.25rem;
 }
 
-.about-image {
-    width: 100%; /* Make the image take up the full width of its container */
-    height: auto; /* Maintain the image's aspect ratio */
-    margin: 1.25rem 0;
-    background-color: #f4f4f4;
-    padding: 1.25rem;
-    border-radius: 0.3125rem;
-}
-
 .about a {
     color: darkgray;
     text-decoration: none;
@@ -129,12 +120,21 @@ h1, h2 {
     color: #FF1493;
 }
 
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-    .about-image {
-        max-width: 100%; /* Allow the image to take up the full width on smaller screens */
-    }
+.about .image-container {
+    text-align: center;
 }
+
+.about .image-container {
+    text-align: center;
+}
+
+.about-image {
+    width: 20%; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /* Styles for the banner text */
 .banner {
