@@ -121,8 +121,3 @@ h1, h2 {
 .about a:hover {
     color:#FF1493;
 }
-
-/* Styles */
-.about container-image {
-    padding: 20px 0;
-}

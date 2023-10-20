@@ -2,7 +2,6 @@
 function toggleDarkMode() {
     const body = document.body;
 
-
     // Check if dark mode is enabled
     const darkModeEnabled = body.classList.contains('dark-mode');
 
