@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 
+html {
+    font-size: 1rem; /* Base font size set to 16px */
+}
+
 /* Styles for the body */
 body {
     font-family: Roboto, sans-serif;
     background-color: #fff;
-    color: #000; 
+    color: #000;
     box-sizing: content-box;
 }
 
 /* Bootstrap's container class */
 .container {
-    max-width: 1200px;
+    max-width: 75rem; /* Converted from 1200px */
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem; /* Converted from 20px */
 }
 
 header, .footer {
     background-color: #000;
     color: #fff;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     text-align: center;
 }
 
@@ -29,7 +33,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 0.625rem; /* Converted from 10px */
 }
 
 nav ul li a {
@@ -39,21 +43,16 @@ nav ul li a {
 
 /* Styles for the dark mode button */
 #dark-mode-toggle {
-    margin-right: 10px; 
-    color: #ccc; 
+    margin-right: 0.625rem;
+    color: #ccc;
     background-color: transparent;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
-
-    &:hover {
-        background-color: #fff;
-        color: #000; 
-    }
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Styles for the banner and section headings */
 .banner {
     text-align: center;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .banner img {
@@ -67,21 +66,21 @@ h1, h2 {
 /* Styles for the sections */
 .advantage-section {
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .advantage-section img {
     max-width: 100%;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 .about {
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .footer p {
-    font-size: 14px;
+    font-size: 0.875rem; /* Converted from 14px */
 }
 
 /* Styles for dark mode */
@@ -95,7 +94,7 @@ h1, h2 {
 }
 
 .dark-mode .banner h1, .dark-mode .banner p {
-    color: #000; 
+    color: #000;
 }
 
 .dark-mode header {
@@ -103,13 +102,13 @@ h1, h2 {
 }
 
 .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode p {
-    color: #fff; /* White for headings and paragraphs */
+    color: #fff;
 }
 
 .about-image {
-    width: 400px;
+    width: 25rem; /* Converted from 400px */
     height: auto;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 /* Styles for the hyperlinks in the "About" section */
@@ -119,14 +118,14 @@ h1, h2 {
 }
 
 .about a:hover {
-    color:#FF1493;
+    color: #FF1493;
 }
 
-/* Styles for the banner and section headings */
+/* Styles for the banner text */
 .banner {
     text-align: center;
-    padding: 20px 0;
-    position: relative; /* Add this line */
+    padding: 1.25rem 0;
+    position: relative;
 }
 
 .banner img {
@@ -137,7 +136,6 @@ h1, h2 {
     color: #000;
 }
 
-/* Styles for the banner text */
 .banner-text {
     position: absolute;
     bottom: 5.50rem;
@@ -148,12 +146,12 @@ h1, h2 {
     border-radius: 0.3125rem;
 }
 
-.banner h1 {
+banner h1 {
     font-size: 2rem;
     margin: 0;
 }
 
-.banner p {
+banner p {
     font-size: 1.2rem;
     margin: 0;
 }
@@ -167,13 +165,13 @@ h1, h2 {
         bottom: auto;
         left: auto;
         background-color: rgba(255, 255, 255, 0.7);
-        padding: 0.625em;
-        border-radius: 0.3125em;
+        padding: 0.625rem;
+        border-radius: 0.3125rem;
         max-width: 100%;
     }
 
     .banner h1,
-    .banner p {
+    ..banner p {
         text-align: center;
     }
 }
