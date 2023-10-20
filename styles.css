@@ -121,3 +121,59 @@ h1, h2 {
 .about a:hover {
     color:#FF1493;
 }
+
+/* Styles for the banner and section headings */
+.banner {
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Add this line */
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    color: #000;
+}
+
+/* Styles for the banner text */
+.banner-text {
+    position: absolute;
+    bottom: 5.50rem;
+    left: 60%;
+    max-width: 30%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 48em) {
+    /* Adjust styles for smaller screens */
+    /* Ensure that the navigation and banner text are below the banner image */
+    .banner-text {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 0.625em;
+        border-radius: 0.3125em;
+        max-width: 100%;
+    }
+
+    .banner h1,
+    .banner p {
+        text-align: center;
+    }
+}
