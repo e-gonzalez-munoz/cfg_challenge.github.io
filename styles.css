@@ -14,9 +14,9 @@ body {
 
 /* Bootstrap's container class */
 .container {
-    max-width: 75rem; /* Converted from 1200px */
+    max-width: 75rem; 
     margin: 0 auto;
-    padding: 1.25rem; /* Converted from 20px */
+    padding: 1.25rem; 
 }
 
 header, .footer {
@@ -33,7 +33,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 0.625rem; /* Converted from 10px */
+    margin: 0 0.625rem;
 }
 
 nav ul li a {
@@ -80,7 +80,7 @@ h1, h2 {
 }
 
 .footer p {
-    font-size: 0.875rem; /* Converted from 14px */
+    font-size: 0.875rem;
 }
 
 /* Styles for dark mode */
@@ -106,10 +106,14 @@ h1, h2 {
 }
 
 .about-image {
-    width: 25rem; /* Converted from 400px */
+    width: 25rem;
     height: auto;
     margin: 1.25rem 0;
+    background-color: #f4f4f4;
+    padding: 1.25rem;
+    border-radius: 0.3125rem;
 }
+
 
 /* Styles for the hyperlinks in the "About" section */
 .about a {
@@ -158,8 +162,6 @@ banner p {
 
 /* Media query for small screens */
 @media screen and (max-width: 48em) {
-    /* Adjust styles for smaller screens */
-    /* Ensure that the navigation and banner text are below the banner image */
     .banner-text {
         position: relative;
         bottom: auto;
@@ -171,7 +173,7 @@ banner p {
     }
 
     .banner h1,
-    ..banner p {
+    .banner p {
         text-align: center;
     }
 }
