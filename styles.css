@@ -10,6 +10,10 @@ body {
     background-color: #fff;
     color: #000;
     box-sizing: content-box;
+    display: flex;
+    flex-direction: column; /* The flexbox layout in the body pushes the footer to the bottom */
+    min-height: 100vh; /* The min-height: 100vh for the body ensures that the page takes up at least the full height of the viewport. */
+    
 }
 
 /* Bootstrap's container class */
@@ -24,6 +28,11 @@ header, .footer {
     color: #fff;
     padding: 0.625rem 0;
     text-align: center;
+}
+
+/* Ensure the footer is always at the bottom */
+.footer {
+    margin-top: auto;
 }
 
 /* Styles for navigation links */
@@ -63,7 +72,7 @@ h1, h2 {
     color: #000;
 }
 
-/* Styles for the sections */
+/* Styles for the "Index" sections */
 .advantage-section {
     text-align: center;
     padding: 1.25rem;
@@ -72,11 +81,6 @@ h1, h2 {
 .advantage-section img {
     max-width: 100%;
     margin: 1.25rem 0;
-}
-
-.about {
-    text-align: center;
-    padding: 1.25rem;
 }
 
 .footer p {
@@ -105,6 +109,31 @@ h1, h2 {
     color: #fff;
 }
 
+
+/* Styles for the "About" section */
+.about {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.about .image-container {
+    text-align: center;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2rem solid #f4f4f4;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        margin-bottom: 1rem; /* Adjust this value as needed for smaller screens */
+    }
+}
+
 /* Styles for the hyperlinks in the "About" section */
 .about a {
     color: darkgray;
@@ -113,23 +142,6 @@ h1, h2 {
 
 .about a:hover {
     color: #FF1493;
-}
-
-.about-image {
-    width: 26%; 
-    max-width: 100%;
-    height: auto;
-    margin: 1.25rem 0;
-    background-color: #f4f4f4;
-    padding: 1.25rem;
-    border-radius: 0.3125rem;
-}
-
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-    .about-image {
-        width: 100%;
-    }
 }
 
 /* Styles for the banner text */
